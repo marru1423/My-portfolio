@@ -1,213 +1,96 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css ">
-    <script src="main.js"></script>
-    <link href="https://fonts.cdnfonts.com/css/cyberpunk-is-not-dead" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>My Portfolio</title>
+    <title>Document</title>
 </head>
 <body>
-    <main>
-        <!-- header -->
-        <header>
-                <a href="#" class="navbar-logo-container space-x-2">
-                    <img class="logo" src="https://i0.wp.com/firetothemax.com/wp-content/uploads/2016/07/firetothemax-logo-plain-trans_512x512.png?ssl=1" width="60" height="60" alt="">
-                <nav class="navbar-menu space-y-4">
-                    <div class="overlay-nav cs hidden" id="Mycontent" data-shown="false">
-                        <ul>
-                            <a href="#" id="active1" class="w3-bar-item w3-button"><li>Home</a></li>
-                            <a href="#" class="w3-bar-item w3-button"><li>About</a></li>
-                            <a href="#" class="w3-bar-item w3-button"><li>Next</a></li>
-                            <a href="#" class="w3-bar-item w3-button"><li>Update</a></li>
-                        </ul>
-                        <div class="hero-search">
-                            <label for="fname" id="sh"></label>
-                            <input type="text" id="fname" name="search" placeholder="Search..">
-                            <button type="submit" id="hero-search1"><i class="fa fa-search"></i></a></button>
-                        </div>
-                    </div>
+<main>
+    <header>
+        <nav class="nav-wraper hidden" id="myBtn" data-shown="false">
+            <div class="nav-list style">
+                <div class="nav-par">
                     <div>
-                </nav> 
-        </header> 
-        <div class="her-menu-bar">
-            <a class="cta" href="#"><button onclick="toggleElements('Mycontent')" id="cta1"><i class="fa-solid fa-bars"></i></i></button></a>
-        </div>
-        <!-- section -->
-        <section>
-            <div class="hero-circle">
-                <div class="circle-content">
-                    <h1 onclick="toggleElements('side-app')" id="clickme">click!</h1>
-                </div>
-
-            </div>
-            <div class="Name-1">
-                <span class="Name">Hi!</span>
-                <span class="hero-name" onclick="typeWriter()">Click me to know me !</span>
-                <p id="anim"></p>
-            </div>
-            <div class="hero-portfolio">
-                <h1>My Portfolio</h1>
-            </div>
-            <div class="hero-image resume">
-                <div class="image-conquer">
-                    <img src="https://c4.wallpaperflare.com/wallpaper/415/465/284/doge-memes-wallpaper-preview.jpg" alt="Resume">
-                    <div class="overlay">
-                        <div class="content">
-                            <h1>Whats up!</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. quos unde nemo, maxime laudantium eos assumenda sint ratione error mollitia alias eum omnis hic! Eum, voluptas possimus.</p>
-                        </div>
+                        <h1>My App</h1>
                     </div>
-                </div>
-
-                <div class="image-conquer">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcdyX_4gjVS_4XmLFY5AxqtHhLM7qkVrmPy1Zj_QCdKppljZBBUzvPxLFAqAtYr48Jx5A&usqp=CAU" alt="Resume">
-                    <div class="overlay">
-                        <div class="content">
-                            <h1>Whats up!</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quos unde nemo, maxime laudantium eos assumenda sint ratione error mollitia alias eum omnis hic! Eum, voluptas possimus.</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="image-conquer">
-                    <img src="https://wallpapers.com/images/hd/meme-laptop-f0kencbc6gl00m7d.jpg" alt="Resume">
-                    <div class="overlay">
-                        <div class="content">
-                            <h1>Whats up!</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. quos unde nemo, maxime laudantium eos assumenda sint ratione error mollitia alias eum omnis hic! Eum, voluptas possimus.</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="image-conquer">
-                    <img src="https://images7.memedroid.com/images/UPLOADED187/54ed185e705b5.jpeg" alt="Resume">
-                    <div class="overlay">
-                        <div class="content">
-                            <h1>Whats up!</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  unde nemo, maxime laudantium eos assumenda sint ratione error mollitia alias eum omnis hic! Eum, voluptas possimus.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-experience">
-                <div class="hero-exp">
-                    <div class="hero-exp-par">
-                        <h1>My Experience</h1>
-                        <ul>
-                            <li>HTML/CSS</li>
-                            <li>JAVA SCRIPT</li>
-                            <li>LIDAR</li>
-                            <li>DATA ANALYST</li>
-                        </ul>
-                    </div>
-
-                    <div class="hero-exp-par">
-                        <h1>My Experience</h1>
-                        <ul>
-                            <li>HTML/CSS</li>
-                            <li>JAVA SCRIPT</li>
-                            <li>LIDAR</li>
-                            <li>DATA ANALYST</li>
-                        </ul>
-                    </div>
-                    <div class="hero-exp-par">
-                        <h1>My Experience</h1>
-                        <ul>
-                            <li>HTML/CSS</li>
-                            <li>JAVA SCRIPT</li>
-                            <li>LIDAR</li>
-                            <li>DATA ANALYST</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-                <div class="hero-par">
-                    <h1 class="text-design">About!</h1>
-                    <p>Welcome to my website! I am a skilled developer creating 
-                        innovative web solutions for businesses and individuals.
-                         Explore my portfolio to see examples of my work and contact me if you're interested in collaborating.
-                        <br>
-                        <br>
-                        Looking for a skilled and experienced web developer to bring your website to life? Look no further! Learn more about my 
-                        web development services and how I can help you create a beautifully designed and functional website that will meet all of your business needs.
-                        <br>
-                        <br>
-                        As an AI language model, I am not capable of accessing your website or providing any information about it. If you 
-                        need assistance with your website as a developer, you should seek guidance from a professional web developer or a reputable online support community.
-                        </p>
-                </div>
-                <div class="sidebar-content hidden" id="side-app" data-shown="false">
-                    <div class="Myapp">MY APP</div>
                     <ul>
-                        <li><a href="#"><i class="far fa-address-card fa-lg white-text fa-2x"></i>Address</a></li>
-                        <li><a href="#"><i class="fab fa-angellist fa-lg white-text fa-2x"></i>Peac Yow</a></li>
-                        <li><a href="#"><i class="fas fa-book-open fa-lg white-text fa-2x"></i>Read More</a></li>
-                        <li><a href="#"><i class="far fa-comment fa-lg white-text fa-2x"></i>Message</a></li>
+                        <a href=""><li>Home</li></a>
+                        <a href=""><li>Contact</li></a>
+                        <a href=""><li>About</li></a>
+                        <a href=""><li>News</li></a>
+                        <a href=""><li>Terms</li></a>
                     </ul>
+                    <a href="#" class="nav-btn-par" id="btnhide" onclick="toggleNav('myBtn')"><i class="fa fa-window-close" aria-hidden="true"></i></a>
                 </div>
-                <div class="hero-content">
-                    <div class="hero-img1">
-                        <img src="https://images7.memedroid.com/images/UPLOADED187/54ed185e705b5.jpeg" alt="Resume">
-                        <div class="hero-overlay">
-                            <div class="hero-content-overlay"> 
-                                <h1>Petmalu</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis accusantium reprehenderit dignissimos reiciendis 
-                                    sapiente ea cupiditate eaque, nostrum porro iusto repellendus error
-                                     dolore nemo repellat distinctio voluptatibus ab. Voluptatem, tenetur.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="hero-img1">
-                        <img src="https://images7.memedroid.com/images/UPLOADED187/54ed185e705b5.jpeg" alt="Resume">
-                        <div class="hero-overlay">
-                            <div class="hero-content-overlay"> 
-                                <h1>Petmalu</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis accusantium reprehenderit dignissimos reiciendis 
-                                    sapiente ea cupiditate eaque, nostrum porro iusto repellendus error
-                                     dolore nemo repellat distinctio voluptatibus ab. Voluptatem, tenetur.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-1">
-                <div class="hero-button">
-                    <button>NEXT</button>
-                </div>
-                <div class="hero-button">
-                    <button>PREV</button>
-                </div>
-            </div>
-        </section>
-        <section class="hero-section2">
-        </section>
-    </main>
-    <footer>
-        <nav class="footer-navigation">
-            <div class="fabpa">
-                <a href="#"><i class="fab fa-facebook fa-lg white-text fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-lg white-text fa-2x"></i></a>
-                <a href="#"><i class="fab fa-youtube fa-lg white-text fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-lg white-text fa-2x"></i></a>
-            </div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>project</li>
-            </ul>
-            <div class="hero-footer1">
-                <p>@allright Reserve by jsadhk2sad28yudh1</p>
             </div>
         </nav>
-    </footer>
-</script>
+        <a href="#" class="nav-btn-par" id="myButton" onclick="toggleNav('myBtn')"><i class="fa-solid fa-bars"></i></a>
+    </header>
+    <section>
+            <div class="hero-wraper">
+                <div class="hero-sec-par">
+                    <h1>My css portfolio</h1>
+                    <p>Welcome to my website! I am a skilled developer creating 
+                        innovative web solutions for businesses and individuals.
+                        Explore my portfolio to see examples of my work and contact me if you're interested in collaborating.</p>
+                </div>
+            </div>
+                <div class="her-title-par2">
+                    <h1>My experience</h1>
+                </div>
+            <div class="hero-sec-content">
+                <div class="hero-sec-par0">
+                    <div class="hero-sec-par2">
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>JAVA SCRIPT</li>
+                                <li>LIDAR</li>
+                                <li>DATA ANALYST</li>
+                            </ul>
+                    </div>
+
+                    <div class="hero-sec-par2">
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>JAVA SCRIPT</li>
+                                <li>LIDAR</li>
+                                <li>DATA ANALYST</li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="hero-wrap2 side">
+                    <div class="hero-w2">
+                        <div class="side-wrap">
+                            <p>As an AI language model, I am not capable of accessing your website or providing any information about it. If you 
+                                need assistance with your website as a developer, you should seek guidance from a professional web developer or a reputable online support community.</p>
+                            <br>
+                                Looking for a skilled and experienced web developer to bring your website to life? Look no further! Learn more about my 
+                                web development services and how I can help you create a beautifully designed and functional website that will meet all of your business needs.
+                            <br>
+                            <br>
+                                Welcome to my website! I am a junior developer who is passionate
+                                about creating innovative and dynamic web solutions. Browse my portfolio and see what I can offer!.
+                            <br>
+                            <br>
+                            Welcome to the personal website of a Junior Developer - showcasing their skills, projects, and experiences. E
+                            xplore their portfolio and get in touch to learn more about their work.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrap">
+                    <div class="hero-image-style">
+                        <img src="https://cdn.wallpapersafari.com/46/60/uYOX0V.jpg" alt="Resume">
+                    </div>
+                </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>
