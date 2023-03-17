@@ -152,7 +152,7 @@ body{
     object-position: center center;
     object-fit: cover;
 }
-@media (max-width: 1766px){
+@media (max-width: 1280px){
     .hero-sec-content, .hero-wraper {
         display: block;
         padding: 0.5rem;
