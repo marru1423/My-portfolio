@@ -106,7 +106,7 @@ body{
     text-transform: uppercase;
 }
 .her-title-par2 h1{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .hero-sec-par span{
     color: rgb(226, 8, 143);
@@ -122,8 +122,20 @@ body{
     padding: 2rem 4rem;
     
 }
+.hero-sec-par3 span, .hero-sec-par3 li{
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1rem;  
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style: none;
+    margin-top: 2rem;
+    color: rgb(9, 7, 124);
+    display: inline-table;
+}
 .hero-sec-par2 li{
-    flex-wrap: wrap;
+    list-style: square;
     padding: 1rem;
     font-weight: 700;
     animation-name: Anim;
@@ -154,7 +166,7 @@ body{
     background-color: rgb(225, 255 ,255, 0.9);
 }
 .hero-image-wrap{
-    width: 70%;
+    width: 100%;
     background-color: rgba(158, 184, 184, 0.9);
     margin: 0;
     overflow: hidden;
@@ -174,5 +186,10 @@ body{
         width: 100%;
         font-size: 4rem;
     }
+    .hero-sec-par3 span, .hero-sec-par3 li{
+        font-size: 1.3rem;
+    }
+    .hero-sec-par2 li{
+        list-style: circle;
+    }
 }
-
