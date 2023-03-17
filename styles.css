@@ -368,7 +368,6 @@ footer li:hover{
 }
 .hero-experience{
     text-align: center;
-    display: flex;
 }
 .hero-exp {
     padding: 1rem 3rem;
@@ -378,10 +377,22 @@ footer li:hover{
     display: inline-block; 
     padding: 2rem; 
     margin: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
     background-color: rgba(231, 219, 219, 0.6);
+    transition: all 2s ease;
+    animation-name: heroExp;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
 }
 .hero-exp h1{
     color: #d30b0b;
+    line-height: 1.5rem;
+    padding: 1rem 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .hero-exp li{
     list-style: none;
@@ -400,6 +411,17 @@ footer li:hover{
     background-color: #000000;
     color: #03ffff;
 
+}
+@keyframes heroExp{
+    from{
+        background-color: #87c2b0;
+    }
+    to {
+        background-color: rgb(43, 117, 117);
+    }
+    50%{
+        background-color: aquamarine;
+    }
 }
 @media(max-width: 940px){
     .hero-par{

@@ -18,16 +18,6 @@ function toggleElements(elementID) {
       ? showElement(mainMenu) // will return "true"
       : hideElement(mainMenu) // will return "false"
 
-  // if (mainMenu.dataset.shown === "false") {
-  //     mainMenu.classList.add('block')
-  //     mainMenu.classList.remove('hidden')
-  //     mainMenu.dataset.shown = "true"
-  // } else {
-  //     mainMenu.classList.add('hidden')
-  //     mainMenu.classList.remove('block')
-  //     mainMenu.dataset.shown = "false"
-  // }
-
   console.log('New Shown: ', mainMenu.dataset.shown)
   console.log('New class: ', mainMenu.classList)
 }
@@ -41,4 +31,19 @@ function hideElement(element) {
   element.classList.add('hidden')
   element.classList.remove('block')
   return "false"
+}
+
+
+// NAVBAR OPEN
+function toggleNav(elementID) {
+  const openNav = document.getElementById(elementID)
+
+  openNav.dataset.shown = openNav.dataset.shown === "false"
+      ? showElement(openNav) // will return "true"
+      : hideElement(openNav) // will return "false"
+}
+function showElement(element) {
+  element.classList.add('block')
+  element.classList.remove('hidden')
+  return "true"
 }
