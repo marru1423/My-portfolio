@@ -82,22 +82,22 @@ body{
 }
 .hero-sec-par{
     text-align: center;
+    width: 100%;
+    margin: 0;
 }
 .hero-sec-par h1{
     text-transform: uppercase;
     padding: 2rem;
-    font-size: 4rem;
     color: rgb(40, 51, 37);
+    font-size: 2rem;
 }
 /* heading 2 */
 .hero-sec-par2{
     padding: 0 2rem;
     text-transform: uppercase;
 }
-.hero-sec-content{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
+.hero-sec-content, .hero-wraper2{
+    display: block;
 }
 .her-title-par2{
     text-align: center;
@@ -105,8 +105,18 @@ body{
     padding: 2rem;
     text-transform: uppercase;
 }
+.her-title-par2 h1{
+    font-size: 2rem;
+}
+.hero-sec-par span{
+    color: rgb(226, 8, 143);
+    font-size: 2rem;
+}
 .hero-sec-par0{
     background-color: rgba(200, 212, 212, 0.5);
+    pad: 0.5rem;
+    width: 100%;
+    margin: 0;
 }
 .hero-sec-par2 ul{
     padding: 2rem 4rem;
@@ -133,40 +143,44 @@ body{
     }
 }
 /* side wrap */
-.hero-wrap2{
-    width: 50%;    
-    padding: 2rem 8rem;
+.hero-wrap2{  
+    padding: 2rem;
     letter-spacing: .1rem;
     font-size: 1.2rem;
+    width: 100%;
+    margin: 0;
 }
 .side{
     background-color: rgb(225, 255 ,255, 0.9);
 }
 .hero-image-wrap{
-    width: 30%;
+    width: 100%;
     background-color: rgba(158, 184, 184, 0.9);
+    margin: 0;
 }
 .hero-image-style img{
     width: 100%;
     height: 35rem;
     object-position: center center;
     object-fit: cover;
+    background-repeat: no-repeat;
 }
-@media (max-width: 1766px){
-    .hero-sec-content, .hero-wraper {
-        display: block;
-        padding: 0.5rem;
+@media (min-width: 1280px) {
+    .hero-sec-content, .hero-wrapper2 , .hero-wraper{
+      display: flex;
     }
-    .hero-sec-par0, .hero-wrap2, .hero-image-wrap, .hero-sec-par{
+    .hero-sec-par h1, .hero-sec-par span{
         width: 100%;
-        padding: 0;
-    }
-    .hero-sec-par0 li{
-        list-style: none;
-        text-align: center;
-        }
-    .hero-sec-par h1, .her-title-par2 h1{
-        width: 100%;
-        font-size: 2rem;
+        font-size: 4rem;
     }
 }
+@media (min-width: 1280px) {
+    .hero-sec-content, .hero-wrapper2 , .hero-wraper{
+      display: flex;
+    }
+    .hero-sec-par h1, .hero-sec-par span{
+        width: 100%;
+        font-size: 4rem;
+    }
+}
+
