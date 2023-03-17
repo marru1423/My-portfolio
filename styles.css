@@ -157,29 +157,13 @@ body{
     width: 100%;
     background-color: rgba(158, 184, 184, 0.9);
     margin: 0;
+    overflow: hidden;
+
 }
 .hero-image-style img{
     width: 100%;
-    height: 35rem;
-    object-position: center center;
+    height: 64vh;
     object-fit: cover;
-    background-repeat: no-repeat;
-}
-<<<<<<< HEAD
-@media (min-width: 1280px) {
-    .hero-sec-content, .hero-wrapper2 , .hero-wraper{
-      display: flex;
-=======
-@media (max-width: 1280px){
-    .hero-sec-content, .hero-wraper {
-        display: block;
-        padding: 0.5rem;
->>>>>>> 031b503d3909f408789d74310817c95a7b0cabba
-    }
-    .hero-sec-par h1, .hero-sec-par span{
-        width: 100%;
-        font-size: 4rem;
-    }
 }
 @media (min-width: 1280px) {
     .hero-sec-content, .hero-wrapper2 , .hero-wraper{
