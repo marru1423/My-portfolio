@@ -11,3 +11,8 @@ function showElement(element) {
   element.classList.remove('hidden')
   return "true"
 }
+function showElement(element) {
+  element.classList.add('hidden')
+  element.classList.remove('block')
+  return "false"
+}
