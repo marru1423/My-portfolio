@@ -18,13 +18,14 @@ body{
     font-weight: 600;
     z-index: 1;
     font-size: 1rem;
-    background-color: #b3b2e9;
+    background-color: rgb(225, 255 ,255);
     height: 100%;
     transition: all 1s ease;
 }
 .nav-wraper li{
     list-style: none;
     padding: 2rem 3.5rem;
+    color: #000;
     border-bottom: solid 0.1rem rgb(0,0,0,0.2);
     border-top: solid 0.1rem  rgb(0,0,0,0.2);
 }
@@ -38,13 +39,14 @@ body{
 }
 .nav-wraper a{
     text-decoration: none;
-    color: black;
+    color: #fff;
     display: block;
 }
 .nav-wraper h1{
     padding: 2rem;
     font-size: 3.1rem;
-    background-color: rgb(184, 123, 49);
+    background-color: #080827;
+    color: #fff;
     
 }
 .nav-btn-par{
@@ -195,34 +197,63 @@ body{
     .hero-sec-par2 li{
         list-style: square;
     }
-    .hero-button-cards{
-        display: flex;
-    }
 }
 /* First Content */
 .heron-content-wrap{
-    padding: 2rem;
+    padding: 4rem 0;
+    margin: 2rem;
     font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: .1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* FOOTER */
-.hero-footer{
-    text-align: center;
-    list-style: none;
+.col-lg-4 {
+    padding: 1.5rem;
 }
-.footer-wraper{
-    background-color: #c7baba;
-    padding: 4rem;
+.single-cat{
+    border: 1px solid rgb(225, 235, 247);
+    border-radius: 0.2rem;
+    padding: 5rem 2rem;
+    height: 22rem;
+    transition: all 0.4s ease-out 0s;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 1;
 }
-.hero-footer li{
-    list-style: none;
+.single-cat::before{
+    content: '';
+    width: 100%;
+    background: rgb(236, 91, 83);
+    height: 0%;
+    position: absolute;
+    left: 0;
+    opacity: 0.9;
+    transition: all 1s;
+    bottom: -0;
+}
+.single-cat:hover::before{
+    height: 100%;
+
+}
+@media(min-width: 1280px){
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 4rem;
+    }
+    .col-lg-4{
+        width: 33.33%;
+    }
+}
+
+.wraper-service{
+    padding: 5rem 3rem;
     font-size: 1.5rem;
-    font-style: italic;
 }
 .px-y h1{
-    margin: 1rem 0;
+    margin: 1.3rem 0;
     position: relative;
 }
 .px-y h1::before{
@@ -241,18 +272,123 @@ body{
 .px-y h1:hover{
     color: rgb(2, 49, 33);
 }
-.btn{
-    color: rgb(1, 15, 15);
-    font-size: 3rem;
-    padding: 3rem;
-}
-.hero-button-cards{
-    display: inline-block; 
-    padding: 2rem; 
-}
-.hero-button{
+/* FOOTER */
+.hero-footer{
     text-align: center;
+    display: grid;
+    padding-bottom: 2rem;
 }
-.hero-button-cards .btn:hover{
-    color: bisque;
+.footer-wraper{
+    background-color: #080827;
+    padding: 3rem 0;
+}
+.portfolio-style a, .portfolio-style h1{
+    padding: 0.5rem 0;
+    display: inline-block; 
+    font-size: 3rem;
+    color: #fff;
+}
+.portfolio-style i{
+    font-size: 2rem;
+}
+.hero-footer a{
+    color: #fff;
+    list-style: none;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: none;
+    padding: 0.5rem;
+    list-style: none;
+}
+.style-email{
+    padding: 1rem;
+}
+.style-email a{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.footer-last{
+    padding: 0 5rem;
+    font-size: 1rem;
+    color: #afabab;
+}
+.footer-last li{
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+.footer-last a{
+    color: rgb(230, 224, 224, 0.5);
+    transition: all 0.3s ease;
+}
+.footer-last a:hover{
+    color: #fff;
+}
+@media(min-width: 1280px) {
+    .hero-footer a{
+        font-size: 1.5rem;
+    }
+    .style-email a{
+        font-size: 3rem;
+    }
+    .footer-last{
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-wraper{
+        width: 30%;
+    }
+}
+/* contact wraper */
+.contact-wrapper{
+    display: block;
+    margin-top: 0em;
+}
+.form-wraper{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgba(206, 200, 200, 0.2);
+    border-radius: 1rem;
+
+
+}
+input{
+    background: rgb(255, 255, 255);
+    height: 4rem;
+    width: 100%;
+    padding: 0.8rem 1.6rem;
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 0px;
+    border: 0px;
+    margin-bottom: 30px;
+    border-radius: 1rem;
+    font-size: 1rem;
+
+}
+.contact-wrapper textarea{
+    color: #000;
+    background: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    height: 10rem;
+    width: 100%;
+    padding: 2rem 1.8rem;
+    border: 0;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+.submit-btn2{
+    background: rgb(236, 91, 83);
+    width: 100%;
+    height: 4rem;
+    padding: 0.5rem 0.8rem;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 1rem;
+    border-radius: 1rem;
 }
