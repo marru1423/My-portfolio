@@ -249,7 +249,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 4rem;
     }
     .col-lg-4{
         width: 33.33%;
