@@ -205,6 +205,10 @@
 .col-lg-4 {
     padding: 1.5rem;
 }
+.single-cat p{
+    padding: 1rem 0;
+
+}
 .single-cat{
     border: 1px solid rgb(225, 235, 247);
     border-radius: 0.2rem;
@@ -214,7 +218,6 @@
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    z-index: 1;
 }
 .single-cat::before{
     content: '';
@@ -224,12 +227,22 @@
     position: absolute;
     left: 0;
     opacity: 0.9;
-    transition: all 1s;
+    transition: all 0.8s;
     bottom: -0;
+    z-index: -1;
 }
 .single-cat:hover::before{
     height: 100%;
-
+}
+.single-cat:hover{
+    color: #fff;
+}
+.cat-cap a{
+    color: #073cad;
+    text-decoration: none;
+}
+.cat-cap a:hover{
+    color: #0b08f3;
 }
 @media(min-width: 1280px){
     .row{
