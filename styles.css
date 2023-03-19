@@ -2,12 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-body{
-    margin: 0 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .block{
     display: block;
+}
+.section-1{
+    padding: 0 1rem;
 }
 .hidden{
     display: none;
@@ -26,8 +27,6 @@ body{
     list-style: none;
     padding: 2rem 3.5rem;
     color: #000;
-    border-bottom: solid 0.1rem rgb(0,0,0,0.2);
-    border-top: solid 0.1rem  rgb(0,0,0,0.2);
 }
 .nav-wraper ul{
     margin-top: 2rem;
@@ -35,7 +34,7 @@ body{
     
 }
 .nav-par{
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 .nav-wraper a{
     text-decoration: none;
@@ -103,7 +102,6 @@ body{
 }
 .her-title-par2{
     text-align: center;
-    font-size: 2rem;
     padding: 2rem;
     text-transform: uppercase;
 }
@@ -163,7 +161,6 @@ body{
 .hero-wrap2{  
     padding: 2rem;
     letter-spacing: .1rem;
-    font-size: 1.2rem;
     width: 100%;
     margin: 0;
 }
@@ -202,8 +199,6 @@ body{
 .heron-content-wrap{
     padding: 4rem 0;
     margin: 2rem;
-    font-size: 1.3rem;
-    font-weight: 500;
     letter-spacing: .1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -255,22 +250,6 @@ body{
 .px-y h1{
     margin: 1.3rem 0;
     position: relative;
-}
-.px-y h1::before{
-    content: '';
-    background-color: #b3b2e9;
-    position: absolute;
-    left: 0;
-    bottom: -0.5rem;
-    width: 0;
-    height: 0.1rem;
-    transition: all 1s ease;
-}
-.px-y h1:hover:before{
-    width: 10%;
-}
-.px-y h1:hover{
-    color: rgb(2, 49, 33);
 }
 /* FOOTER */
 .hero-footer{
