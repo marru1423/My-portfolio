@@ -126,7 +126,6 @@
     
 }
 .hero-sec-par3 span, .hero-sec-par3 li{
-    padding: 1rem;
     font-weight: 700;
     font-size: 1rem;  
     padding: 1rem 2rem;
@@ -221,7 +220,7 @@
 .single-cat::before{
     content: '';
     width: 100%;
-    background: rgb(236, 91, 83);
+    background: rgb(219, 112, 107);
     height: 0%;
     position: absolute;
     left: 0;
