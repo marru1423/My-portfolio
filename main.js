@@ -1,5 +1,6 @@
 function toggleNav(elementID) {
-  const openNav = document.getElementById(elementID)
+const openNav = document.getElementById(elementID)
+
 
   openNav.dataset.shown = openNav.dataset.shown === "false"
       ? showElement(openNav) // will return "true"
@@ -17,3 +18,4 @@ function hideElement(element) {
   element.classList.remove('block')
   return "false"
 }
+console.log(toggleNav)
